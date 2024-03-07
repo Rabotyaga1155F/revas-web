@@ -9,19 +9,21 @@ import Form from "@/components/form/Form";
 
 export default function Home() {
   return (
-    <div className={"mx-80"}>
-      <Header />
-      <Image
-        className={"w-full h-[210px] mt-3"}
-        src={header}
-        alt={"DownHeader"}
-      />
-      <main>
-        <Services />
-        <Puzzle />
-        <Map />
-        <Form />
-      </main>
+    <div>
+      <div className={"mx-60"}>
+        <Header />
+        <Image
+          className={"w-full h-[210px] mt-3"}
+          src={header}
+          alt={"DownHeader"}
+        />
+        <main>
+          <Services />
+          <Puzzle />
+          <Map />
+          <Form />
+        </main>
+      </div>
       <Footer />
     </div>
   );

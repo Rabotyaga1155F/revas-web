@@ -1,0 +1,56 @@
+.form {
+    background-color: #1E2D55;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+
+}
+
+.inputgroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.input-group input {
+    width: 50%;
+    /* Примерно половина ширины контейнера */
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #C9C2C2;
+    margin: 0 6px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.checkboxgroup h2 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
+.submit-button {
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1E2D55;
+    width: 80%;
+    height: 61px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
