@@ -8,7 +8,11 @@ interface IServicesItemProps {
 
 const ServicesItem: FC<IServicesItemProps> = ({ serviceName, image }) => {
   return (
-    <div className={"w-[295px] bg-[#E5EEF3]"}>
+    <div
+      className={
+        "w-[295px] bg-[#E5EEF3] md:w-[160px]  lg:w-[200px] xl:w-[295px] smob:w-[170px] "
+      }
+    >
       <Image className={"w-[295px] h-[223px]"} src={image} alt={"Photo"} />
       <h1 className={"text-[#1E2D55] text-[25px] font-bold text-center mt-2"}>
         {serviceName}
@@ -16,16 +20,16 @@ const ServicesItem: FC<IServicesItemProps> = ({ serviceName, image }) => {
       <section className={"pb-6"}>
         <h3 className={"my-1 ml-4 text-[#303C62] font-medium"}>Студии</h3>
         <h3 className={"my-1 ml-4 text-[#303C62] font-medium"}>
-          1-комнатные квартиры
+          1 - комнатные квартиры
         </h3>
         <h3 className={"my-1 ml-4 text-[#303C62] font-medium"}>
-          2-комнатные квартиры
+          2 - комнатные квартиры
         </h3>
         <h3 className={"my-1 ml-4 text-[#303C62] font-medium"}>
-          3-комнатные квартиры
+          3 - комнатные квартиры
         </h3>
         <h3 className={"my-1 ml-4 text-[#303C62] font-medium"}>
-          4-комнатные квартиры
+          4 - комнатные квартиры
         </h3>
       </section>
     </div>

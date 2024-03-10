@@ -9,8 +9,12 @@ import Form from "@/components/form/Form";
 
 export default function Home() {
   return (
-    <div>
-      <div className={"mx-60"}>
+    <div className={"wrapper"}>
+      <div
+        className={
+          "  xl:mx-10 2xl:mx-40 3xl:mx-[300px] 4xl:mx-[400px] 5xl:mx-[500px]  bmob:mx-6"
+        }
+      >
         <Header />
         <Image
           className={"w-full h-[210px] mt-3"}
