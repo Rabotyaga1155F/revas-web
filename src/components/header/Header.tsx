@@ -11,7 +11,7 @@ const Header = () => {
       <Image width={109} height={130} src={logo} alt={"logo"} />
       <h1
         className={
-          "text-[28px] font-bold text-[#1e2d55] xl:text-[36px] bmob:text-[20px] md:text-[26px]"
+          "text-[28px] font-bold text-[#1e2d55] xl:text-[36px] bmob:text-[20px] md:text-[26px] lg:text-[34px]"
         }
       >
         Агенство Недвижимости РЕВАС

@@ -12,7 +12,7 @@ export default function Home() {
     <div className={"wrapper"}>
       <div
         className={
-          "  xl:mx-10 2xl:mx-40 3xl:mx-[300px] 4xl:mx-[400px] 5xl:mx-[500px]  bmob:mx-6"
+          "  xl:mx-10 2xl:mx-32 3xl:mx-[300px] 4xl:mx-[400px] 5xl:mx-[500px]  bmob:mx-6"
         }
       >
         <Header />
