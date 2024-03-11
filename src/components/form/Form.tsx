@@ -1,14 +1,17 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./form.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
-
+import axios from "axios";
+import { sendMessageToEmail } from "@/utils/serverActions";
 interface Inputs {
   Name: string;
   Phone: string;
 }
 
 const Form = () => {
+  const [Name, setName] = useState("");
+  const [Phone, setPhone] = useState("");
   const {
     register,
     reset,
@@ -17,8 +20,16 @@ const Form = () => {
   } = useForm<Inputs>({ mode: "onBlur" });
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    alert(JSON.stringify(data));
-    reset();
+    try {
+      alert(JSON.stringify(data));
+      reset();
+      sendMessageToEmail(`Имя - ${Name} \nНомер телефона - ${Phone}`);
+
+      setName("");
+      setPhone("");
+    } catch (error) {
+      console.log("Error", error);
+    }
   };
 
   return (
@@ -37,6 +48,7 @@ const Form = () => {
             {...register("Name", {
               required: true,
             })}
+            onChange={(event) => setName(event.target.value)}
           />
           <p className={"text-left ml-8 mt-2 text-red-600"}>
             {errors.Name && <span>Это поле обязательно</span>}
@@ -60,6 +72,7 @@ const Form = () => {
                 message: "Неверный номер",
               },
             })}
+            onChange={(event) => setPhone(event.target.value)}
           />
           <p className={"text-left ml-8 mt-2 text-red-600"}>
             {errors?.Phone && <span>{errors?.Phone.message}</span>}
