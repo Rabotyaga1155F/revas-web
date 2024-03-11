@@ -1,4 +1,3 @@
-require("dotenv").config();
 import mailer from "nodemailer";
 
 export const sendMail = (message: any) => {
