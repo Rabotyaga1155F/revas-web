@@ -1,6 +1,6 @@
 import mailer from "nodemailer";
 
-export const sendMail = (message: any) => {
+export const sendMail = async (message: any) => {
   const smtpTransport = mailer.createTransport({
     host: process.env.EMAIL_HOST,
     port: 465,
@@ -12,12 +12,12 @@ export const sendMail = (message: any) => {
     tls: { rejectUnauthorized: false },
   });
 
-  smtpTransport.sendMail(message, function (err, info) {
-    if (err) {
-      console.log("Ошибка", err);
-    } else {
-      console.log("email sent", info);
-    }
+  try {
+    const info = await smtpTransport.sendMail(message);
+    console.log("email sent", info);
+  } catch (err) {
+    console.log("Ошибка", err);
+  } finally {
     smtpTransport.close();
-  });
+  }
 };

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import styles from "./form.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
-import axios from "axios";
 import { sendMessageToEmail } from "@/utils/serverActions";
 interface Inputs {
   Name: string;
