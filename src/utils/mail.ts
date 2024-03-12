@@ -2,12 +2,12 @@ import mailer from "nodemailer";
 
 export const sendMail = (message: any) => {
   const smtpTransport = mailer.createTransport({
-    host: "smtp.mail.ru",
+    host: process.env.EMAIL_HOST,
     port: 465,
     secure: true,
     auth: {
-      user: "poryadin2004@internet.ru",
-      pass: "27C9aZ9EUY9ndw0fpBs8",
+      user: process.env.EMAIL_USER2,
+      pass: process.env.EMAIL_PASS2,
     },
     tls: { rejectUnauthorized: false },
   });

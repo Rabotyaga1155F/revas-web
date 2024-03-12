@@ -4,8 +4,8 @@ import { sendMail } from "@/utils/mail";
 
 export async function sendMessageToEmail(text: any) {
   const message = {
-    from: "Revas <poryadin2004@internet.ru>",
-    to: "cool.poryadin2014@yandex.ru",
+    from: "Revas <capitalgk@mail.ru>",
+    to: process.env.RECIPIENT,
     subject: "Вам оставили заявку!",
     text: text,
   };
