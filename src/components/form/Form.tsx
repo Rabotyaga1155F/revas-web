@@ -2,11 +2,8 @@
 import React, { useState } from "react";
 import styles from "./form.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { sendMessageToEmail } from "@/utils/serverActions";
-interface Inputs {
-  Name: string;
-  Phone: string;
-}
+import { sendMessageToEmail } from "@/utils/send-mail/serverActions";
+import { UserForm } from "@/types/user-form.types";
 
 const Form = () => {
   const [Name, setName] = useState("");
@@ -16,9 +13,9 @@ const Form = () => {
     reset,
     formState: { errors, isValid },
     handleSubmit,
-  } = useForm<Inputs>({ mode: "onBlur" });
+  } = useForm<UserForm>({ mode: "onBlur" });
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
+  const onSubmit: SubmitHandler<UserForm> = (data) => {
     try {
       alert(JSON.stringify(data));
       reset();

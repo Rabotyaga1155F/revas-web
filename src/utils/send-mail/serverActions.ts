@@ -1,5 +1,5 @@
 "use server";
-import { sendMail } from "@/utils/mail";
+import { sendMail } from "@/utils/send-mail/mail";
 
 export async function sendMessageToEmail(text: any) {
   try {
