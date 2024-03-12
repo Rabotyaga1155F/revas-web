@@ -17,7 +17,7 @@ const Form = () => {
 
   const onSubmit: SubmitHandler<UserForm> = (data) => {
     try {
-      alert(JSON.stringify(data));
+      alert("Форма успешно отправлена");
       reset();
       sendMessageToEmail(`Имя - ${Name} \nНомер телефона - ${Phone}`);
 
