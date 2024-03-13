@@ -35,7 +35,12 @@ const Header = () => {
           <p className={"text-[#303C62] font-bold text-[14px]"}>
             +7 90 900 911 10
           </p>
-          <Image width={41} height={39} src={whatsapp} alt={"Whatsapp"} />
+          <a
+            target={"_blank"}
+            href="https://api.whatsapp.com/send/?phone=79090091110&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%0A%0A&type=phone_number&app_absent=0"
+          >
+            <Image width={41} height={39} src={whatsapp} alt={"Whatsapp"} />
+          </a>
         </div>
         <div className={"rounded-[16px]"}>
           <HeaderButton />

@@ -24,11 +24,16 @@ const Footer = () => {
             <a target={"_blank"} href="https://vk.com/revas_n">
               <Image className={"w-[41px] h-[41px]"} src={vk} alt={"VK"} />
             </a>
-            <Image
-              className={"w-[41px] h-[41px]"}
-              src={whatsapp}
-              alt={"WhatsApp"}
-            />
+            <a
+              target={"_blank"}
+              href="https://api.whatsapp.com/send/?phone=79090091110&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%0A%0A&type=phone_number&app_absent=0"
+            >
+              <Image
+                className={"w-[41px] h-[41px]"}
+                src={whatsapp}
+                alt={"WhatsApp"}
+              />
+            </a>
           </div>
         </div>
         <div className={"flex flex-col mx-auto"}>
