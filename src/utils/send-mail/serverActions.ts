@@ -5,7 +5,7 @@ export async function sendMessageToEmail(text: any) {
   try {
     const message = {
       from: "Revas <capitalgk@mail.ru>",
-      to: process.env.RECIPIENT,
+      to: "reg1805@bk.ru",
       subject: "Вам оставили заявку!",
       text: text,
     };
