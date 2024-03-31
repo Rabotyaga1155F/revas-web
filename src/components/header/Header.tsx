@@ -14,7 +14,7 @@ const Header = () => {
           "text-[28px] font-bold text-[#1e2d55] xl:text-[36px] bmob:text-[20px] md:text-[26px] lg:text-[34px]"
         }
       >
-        Агенство Недвижимости РЕВАС
+        Агентство Недвижимости РЕВАС
       </h1>
       <div className={"phone"}>
         <a href={"tel:+73432077015"} className={"text-[#1E2D55] text-[36px]"}>
