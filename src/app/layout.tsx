@@ -6,9 +6,9 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "АН РЕВАС",
+  title: "Агентство недвижимости РЕВАС",
   description:
-    "Надежное агентство РЕВАС поможет вам найти идеальное жилье. Широкий выбор квартир, домов и коммерческой недвижимости.Звоните для консультации!",
+    "Надежное агентство РЕВАС поможет вам найти идеальное жилье. Широкий выбор квартир, домов и коммерческой недвижимости. Звоните для консультации!",
 };
 
 export default function RootLayout({
@@ -17,12 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <Head>
-        <title>АН РЕВАС</title>
+        <title>Агентство недвижимости РЕВАС</title>
         <meta
           name="description"
-          content="Надежное агентство РЕВАС поможет вам найти идеальное жилье. Широкий выбор квартир, домов и коммерческой недвижимости.Звоните для консультации!"
+          content="Надежное агентство РЕВАС поможет вам найти идеальное жилье. Широкий выбор квартир, домов и коммерческой недвижимости. Звоните для консультации!"
         />
       </Head>
       <body className={inter.className}>{children}</body>
