@@ -36,14 +36,18 @@ const Form = () => {
           id={"form"}
           className={styles.form}
         >
-          <h1 className={"text-white font-bold text-[24px] text-center pt-5"}>
+          <h1
+            className={
+              "text-white font-bold md:text-[24px] smob:text-[14px] px-3 text-center pt-5"
+            }
+          >
             ОСТАВЬТЕ ОНЛАЙН ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ
           </h1>
           <div className={styles.inputgroup}>
             <div className={"text-center"}>
               <input
                 className={
-                  "w-[284px] py-4 px-3 rounded-[8px] text-[16px] font-bold placeholder:text-[#C9C2C2] mx-6"
+                  " mx-3 py-4 px-3 rounded-[8px] text-[16px] font-bold placeholder:text-[#C9C2C2] "
                 }
                 type="text"
                 placeholder={"Ваше имя"}
@@ -57,10 +61,10 @@ const Form = () => {
               </p>
             </div>
 
-            <div className={"text-center"}>
+            <div className={""}>
               <input
                 className={
-                  "w-[284px] py-4 px-3 rounded-[8px] text-[16px] font-bold placeholder:text-[#C9C2C2] mx-6"
+                  "mx-3 py-4 px-3 rounded-[8px] text-[16px] font-bold placeholder:text-[#C9C2C2] "
                 }
                 type="text"
                 placeholder={"Ваш телефон"}
@@ -84,7 +88,7 @@ const Form = () => {
           <div className={styles.checkboxgroup}>
             <label
               className={
-                "mt-6 font-bold text-[16px] text-white pl-2 flex text-center mx-32 md:mx-16"
+                "pt-6 font-bold  text-white pl-2 flex text-center mx-32 md:mx-16 smob:mx-4 smob:text-[10px] md:text-[16px]"
               }
             >
               <input
@@ -101,7 +105,7 @@ const Form = () => {
             <button
               disabled={!isValid}
               className={
-                "bg-white font-bold text-[16px] text-[#1E2D55] w-[332px] h-[61px] rounded-[8px] mt-12 hover:bg-gray-300 cursor-pointer"
+                "bg-white font-bold text-[16px] text-[#1E2D55] smob:py-4 smob:px-10 md:py-4 md:px-14 rounded-[8px] mt-12  hover:bg-gray-300 cursor-pointer"
               }
               type={"submit"}
             >

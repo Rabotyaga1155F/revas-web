@@ -4,8 +4,12 @@ import { IPuzzleItemProps } from "@/components/puzzle/puzzle-item/puzzle.types";
 
 const PuzzleItem: FC<IPuzzleItemProps> = ({ photo }) => {
   return (
-    <div className={"w-[232px] h-[232px] shadow-2xl"}>
-      <Image className={"w-[232px] h-[232px]"} src={photo} alt={"Photo"} />
+    <div className={"md:w-[232px] smob:w-full  shadow-2xl"}>
+      <Image
+        className={"md:w-[232px] smob:w-full  md:h-[232px] smob:h-[400px]"}
+        src={photo}
+        alt={"Photo"}
+      />
     </div>
   );
 };

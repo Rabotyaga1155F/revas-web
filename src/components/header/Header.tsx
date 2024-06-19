@@ -8,21 +8,26 @@ import HeaderButton from "@/ui/HeaderButton";
 const Header = () => {
   return (
     <header className={"flex items-center justify-between mt-2"}>
-      <Image width={109} height={130} src={logo} alt={"logo"} />
+      <Image
+        className={"md:w-[109px] md:h-[130px] smob:w-[80px] smob:h-[100px]"}
+        src={logo}
+        alt={"logo"}
+      />
       <h1
         className={
-          "text-[28px] font-bold text-[#1e2d55] xl:text-[36px] bmob:text-[20px] md:text-[26px] lg:text-[34px]"
+          "text-[28px] font-bold text-[#1e2d55] xl:text-[36px] bmob:text-[20px] md:text-[26px] lg:text-[34px] smob:text-[14px] smob:mx-auto"
         }
       >
         Агентство Недвижимости РЕВАС
       </h1>
+
       <div className={"phone"}>
         <a href={"tel:+73432077015"} className={"text-[#1E2D55] text-[36px]"}>
           +7 (343) <span className={"font-bold"}>207-70-15</span>
         </a>
         <p className={"text-[#1E2D55]"}>ЖДЕМ ЗВОНКИ ЕЖЕДНЕВНО!</p>
       </div>
-      <div>
+      <div className={"smob:hidden bmob:block bmob:visible"}>
         <div className={"flex items-center"}>
           <p className={"text-[#303C62] font-bold text-[15px] mr-3"}>
             Пишите нам в
@@ -42,7 +47,7 @@ const Header = () => {
             <Image width={41} height={39} src={whatsapp} alt={"Whatsapp"} />
           </a>
         </div>
-        <div className={"rounded-[16px]"}>
+        <div className={"rounded-[16px] smob:hidden md:block md:visible"}>
           <HeaderButton />
         </div>
       </div>

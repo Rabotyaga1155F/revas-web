@@ -11,27 +11,6 @@
     width: 100%;
 }
 
-.wrapper{
-
-}
-
-@media (max-width: 651px) {
-    .wrapper{
-        width: 600px;
-    }
-}
-
-@media (max-width: 445px) {
-    .wrapper{
-        width: 800px;
-    }
-}
-
-@media (max-width: 251px) {
-    .wrapper{
-        width: 600px;
-    }
-}
 
 
 @media (max-width: 1285px) {

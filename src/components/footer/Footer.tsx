@@ -17,9 +17,15 @@ const handleUpButton = () => {
 const Footer = () => {
   return (
     <footer className={"bg-[#ECEAE9] h-[280px] block"}>
-      <div className={"mx-80 pt-6 flex md:mx-10 lg:mx-40 smob:mx-6 "}>
-        <div className={"w-[150px] "}>
-          <Image className={"w-[150px] h-[180px]"} src={logo} alt={"LOGO"} />
+      <div className={"mx-80 pt-6 flex md:mx-10 lg:mx-40 smob:mx-6"}>
+        <div className={"smob:hidden bmob:visible bmob:block"}>
+          <Image
+            className={
+              "bmob:w-[150px] bmob:h-[180px] smob:w-[120px] smob:h-[150px]"
+            }
+            src={logo}
+            alt={"LOGO"}
+          />
           <div className={"flex justify-around mt-2"}>
             <a target={"_blank"} href="https://vk.com/revas_n">
               <Image className={"w-[41px] h-[41px]"} src={vk} alt={"VK"} />
@@ -36,27 +42,30 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className={"flex flex-col mx-auto"}>
+        <div className={"flex flex-col mx-auto "}>
           <h1 className={"mx-auto font-bold text-[#1E2D55]"}>Телефон</h1>
           <a
             href={"tel:+73432077015"}
-            className={"mx-auto font-medium text-[30px] text-[#1E2D55] mt-2"}
+            className={
+              "mx-auto font-medium smob:text-[18px] sm:text-[30px] text-[#1E2D55] mt-2"
+            }
           >
             +7 (343) 207-70-15
           </a>
           <h1 className={"mx-auto font-bold text-[#1E2D55] mt-2"}>Email</h1>
           <a
             href={"mailto:revas1805@bk.ru"}
-            className={"mx-auto font-medium text-[30px] text-[#1E2D55] mt-2"}
+            className={
+              "mx-auto font-medium smob:text-[18px] sm:text-[30px] text-[#1E2D55] mt-2"
+            }
           >
             revas1805@bk.ru
           </a>
-          <h1 className={"mx-auto font-bold text-[#1E2D55] mt-10"}>
+          <h1 className={"text-center font-bold text-[#1E2D55] mt-10"}>
             Агентство Недвижимости РЕВАС
           </h1>
         </div>
 
-        <div className={"w-[135px]"}></div>
         <div className={"pt-44"}>
           <button
             onClick={() => handleUpButton()}

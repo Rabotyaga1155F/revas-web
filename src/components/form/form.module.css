@@ -1,6 +1,6 @@
 .form {
     background-color: #1E2D55;
-    height: 407px;
+    padding:  30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,10 +13,14 @@
     justify-content: center;
     margin-top: 48px;
 }
+@media (max-width: 768px){
+    .inputgroup{
+        flex-direction: column;
+    }
+}
 
 .input-group input {
     width: 50%;
-    /* Примерно половина ширины контейнера */
     padding: 12px;
     border-radius: 8px;
     font-size: 16px;

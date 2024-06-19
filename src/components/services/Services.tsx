@@ -7,7 +7,7 @@ import buyphoto from "@/assets/images/buy_photo.jpg";
 
 const Services: FC = () => {
   return (
-    <div className={"flex justify-between mt-14"}>
+    <div className={"flex md:flex-row smob:flex-col justify-between mt-14"}>
       <ServicesItem serviceName={"СНЯТЬ"} image={snyatphoto} />
       <ServicesItem serviceName={"СДАТЬ"} image={sdatphoto} />
       <ServicesItem serviceName={"ПРОДАТЬ"} image={prodatphoto} />

@@ -6,7 +6,6 @@ import Services from "@/components/services/Services";
 import Puzzle from "@/components/puzzle/Puzzle";
 import Map from "@/components/map/Map";
 import Form from "@/components/form/Form";
-import type { Metadata } from "next";
 import Head from "next/head";
 
 export default function Home() {
@@ -21,12 +20,12 @@ export default function Home() {
       </Head>
       <div
         className={
-          "  xl:mx-10 2xl:mx-32 3xl:mx-[300px] 4xl:mx-[400px] 5xl:mx-[500px]  bmob:mx-6"
+          "xl:mx-10 2xl:mx-32 3xl:mx-[300px] 4xl:mx-[400px] 5xl:mx-[500px]  bmob:mx-6"
         }
       >
         <Header />
         <Image
-          className={"w-full h-[210px] mt-3"}
+          className={"w-full smob:h-[100px] md:h-[210px] mt-3"}
           src={header}
           alt={"DownHeader"}
         />

@@ -9,10 +9,9 @@ const Map = () => {
         НАШ ОФИС
       </h1>
       <iframe
-        className={
-          "mx-auto mt-10 w-[800px] h-[400px] bmob:w-[600px] md:w-[700px] lg:w-[1000px]"
-        }
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A7de0c7955e93a12f4d9028de8c20692931a23f2d2b2d6d1d09b254b48295535b&amp;source=constructor"
+        width="100%"
+        height="400"
       ></iframe>
 
       <div className={"mt-6"}>
