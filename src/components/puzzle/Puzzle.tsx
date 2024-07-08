@@ -17,7 +17,7 @@ const Puzzle = () => {
       </div>
       <div
         className={
-          "flex md:flex-row smob:flex-col-reverse justify-between md:mt-4 lg2:mt-24"
+          "flex md:flex-row smob:flex-col-reverse justify-between md:mt-4 lg2:mt-12"
         }
       >
         <PuzzleTextItem text={`ВЫГОДНО \n ПРОДАТЬ`} />

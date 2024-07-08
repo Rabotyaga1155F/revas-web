@@ -14,3 +14,8 @@ export const robotoLight = Roboto({
   weight: "400",
   subsets: ["latin"],
 });
+
+export const robotoExtraBold = Roboto({
+  weight: "900",
+  subsets: ["latin"],
+});
