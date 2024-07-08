@@ -15,9 +15,10 @@ const handleButtonClick = () => {
 const HeaderButton = () => {
   return (
     <button
+      style={{ background: "#F04D23" }}
       onClick={handleButtonClick}
       className={
-        "font-bold text-[16px] text-white bg-[#1E2D55] text-center px-3 py-4 rounded-[16px] hover:bg-blue-900"
+        "font-bold text-[16px] text-white text-center px-3 py-4 rounded-[16px] hover:bg-orange-700"
       }
     >
       Оставить заявку

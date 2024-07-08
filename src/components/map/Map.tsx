@@ -1,11 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import mapImage from "@/assets/images/map-image.jpeg";
+import { roboto } from "@/assets/fonts";
 
 const Map = () => {
   return (
     <div>
-      <h1 className={"text-[#1E2D55] text-center font-bold text-[36px] mt-24"}>
+      <h1
+        style={roboto.style}
+        className={"text-orange text-center font-bold text-[36px] mt-24"}
+      >
         НАШ ОФИС
       </h1>
       <iframe

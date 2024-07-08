@@ -8,21 +8,21 @@ import puzzle4 from "@/assets/images/puzzle4.jpg";
 
 const Puzzle = () => {
   return (
-    <div className={"mt-24"}>
-      <div className={"flex md:flex-row smob:flex-col justify-between"}>
+    <div className={"mt-24 "}>
+      <div className={"flex md:flex-row smob:flex-col justify-between "}>
         <PuzzleItem photo={puzzle1} />
-        <PuzzleTextItem text={"ВЫГОДНО КУПИТЬ"} />
+        <PuzzleTextItem text={"ВЫГОДНО \n КУПИТЬ"} />
         <PuzzleItem photo={puzzle2} />
-        <PuzzleTextItem text={"БЫСТРО СДАТЬ"} />
+        <PuzzleTextItem text={"БЫСТРО \n СДАТЬ"} />
       </div>
       <div
         className={
-          "flex md:flex-row smob:flex-col-reverse justify-between md:mt-4"
+          "flex md:flex-row smob:flex-col-reverse justify-between md:mt-4 lg2:mt-24"
         }
       >
-        <PuzzleTextItem text={"ВЫГОДНО ПРОДАТЬ"} />
+        <PuzzleTextItem text={`ВЫГОДНО \n ПРОДАТЬ`} />
         <PuzzleItem photo={puzzle3} />
-        <PuzzleTextItem text={"БЫСТРАЯ ИПОТЕКА"} />
+        <PuzzleTextItem text={"БЫСТРАЯ \n ИПОТЕКА"} />
         <PuzzleItem photo={puzzle4} />
       </div>
     </div>

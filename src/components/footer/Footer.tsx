@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import logo from "@/assets/images/logo.jpg";
+import logo from "@/assets/images/footer-logo.png";
 import vk from "@/assets/images/vk.png";
 import whatsapp from "@/assets/images/whatsapp.png";
 import arrow from "@/assets/images/arrow.svg";
+import { roboto, robotoLight } from "@/assets/fonts";
 
 const handleUpButton = () => {
   window.scrollTo({
@@ -17,16 +18,60 @@ const handleUpButton = () => {
 const Footer = () => {
   return (
     <footer className={"bg-[#ECEAE9] h-[280px] block"}>
-      <div className={"mx-80 pt-6 flex md:mx-10 lg:mx-40 smob:mx-6"}>
-        <div className={"smob:hidden bmob:visible bmob:block"}>
+      <div className={"mx-80 pt-6 flex md:mx-10 lg:mx-20 smob:mx-6"}>
+        <div className={"smob:hidden bbbmob:visible bbbmob:block smob:my-auto"}>
           <Image
             className={
-              "bmob:w-[150px] bmob:h-[180px] smob:w-[120px] smob:h-[150px]"
+              "smob:w-[120px] smob:h-[130px] md:h-[250px] md:w-[250px]  "
             }
             src={logo}
             alt={"LOGO"}
           />
-          <div className={"flex justify-around mt-2"}>
+        </div>
+        <div className={"flex flex-col mx-auto bbbmob:pr-20 md:pr-64  "}>
+          <h1
+            style={robotoLight.style}
+            className={
+              "mx-auto font-bold text-orange smob:text-[16px] lg2:text-[30px] lg:text-[24px] "
+            }
+          >
+            Телефон -{" "}
+            <a
+              style={robotoLight.style}
+              href={"tel:+73432077015"}
+              className={
+                "mx-auto font-medium smob:text-[16px] lg2:text-[30px] text-orange mt-2 lg:text-[24px]"
+              }
+            >
+              +7 (343) 207-70-15
+            </a>
+          </h1>
+
+          <h1
+            style={robotoLight.style}
+            className={
+              "mx-auto font-bold text-orange mt-2 smob:text-[16px] lg2:text-[30px] lg:text-[24px]"
+            }
+          >
+            Email -{" "}
+            <a
+              style={robotoLight.style}
+              href={"mailto:revas1805@bk.ru"}
+              className={
+                "mx-auto font-medium smob:text-[16px] lg2:text-[30px] text-orange mt-2 lg:text-[24px]"
+              }
+            >
+              revas1805@bk.ru
+            </a>
+          </h1>
+
+          <h1
+            style={roboto.style}
+            className={"text-center font-bold text-orange mt-5"}
+          >
+            Агентство Недвижимости РЕВАС
+          </h1>
+          <div className={"flex justify-center gap-4 mt-8"}>
             <a target={"_blank"} href="https://vk.com/revas_n">
               <Image className={"w-[41px] h-[41px]"} src={vk} alt={"VK"} />
             </a>
@@ -42,35 +87,12 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className={"flex flex-col mx-auto "}>
-          <h1 className={"mx-auto font-bold text-[#1E2D55]"}>Телефон</h1>
-          <a
-            href={"tel:+73432077015"}
-            className={
-              "mx-auto font-medium smob:text-[18px] sm:text-[30px] text-[#1E2D55] mt-2"
-            }
-          >
-            +7 (343) 207-70-15
-          </a>
-          <h1 className={"mx-auto font-bold text-[#1E2D55] mt-2"}>Email</h1>
-          <a
-            href={"mailto:revas1805@bk.ru"}
-            className={
-              "mx-auto font-medium smob:text-[18px] sm:text-[30px] text-[#1E2D55] mt-2"
-            }
-          >
-            revas1805@bk.ru
-          </a>
-          <h1 className={"text-center font-bold text-[#1E2D55] mt-10"}>
-            Агентство Недвижимости РЕВАС
-          </h1>
-        </div>
 
         <div className={"pt-44"}>
           <button
             onClick={() => handleUpButton()}
             className={
-              "h-[54px] w-[62px] bg-[#1E2D55] rounded-[8px] absolute right-10 hover:bg-blue-900 smob:w-0 sm:w-[62px]"
+              "h-[54px] w-[62px] bg-orange rounded-[8px] absolute right-10 hover:bg-orange-white smob:w-0 sm:w-[62px]"
             }
           >
             <Image className={"mx-auto"} src={arrow} alt={"Arrow"} />

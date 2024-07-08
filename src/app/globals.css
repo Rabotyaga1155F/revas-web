@@ -13,9 +13,13 @@
 
 
 
-@media (max-width: 1285px) {
+@media (max-width: 847px) {
     .phone{
         display: none;
     }
 
+}
+
+.phone{
+    margin-right: 16px;
 }

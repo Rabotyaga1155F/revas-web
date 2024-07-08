@@ -25,7 +25,9 @@ export default function Home() {
       >
         <Header />
         <Image
-          className={"w-full smob:h-[100px] md:h-[210px] mt-3"}
+          className={
+            "w-full smob:h-[80px] bbmob:h-[130px] md:h-[200px] lg:h-[230px] 2xl:h-[300px] mt-3"
+          }
           src={header}
           alt={"DownHeader"}
         />

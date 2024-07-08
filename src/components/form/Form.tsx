@@ -4,6 +4,7 @@ import styles from "./form.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { sendMessageToEmail } from "@/utils/send-mail/serverActions";
 import { UserForm } from "@/types/user-form.types";
+import { roboto, robotoLight } from "@/assets/fonts";
 
 const Form = () => {
   const [Name, setName] = useState("");
@@ -37,6 +38,7 @@ const Form = () => {
           className={styles.form}
         >
           <h1
+            style={roboto.style}
             className={
               "text-white font-bold md:text-[24px] smob:text-[14px] px-3 text-center pt-5"
             }
@@ -56,7 +58,10 @@ const Form = () => {
                 })}
                 onChange={(event) => setName(event.target.value)}
               />
-              <p className={"text-left ml-8 mt-2 text-red-600"}>
+              <p
+                style={robotoLight.style}
+                className={"text-left ml-8 mt-2 text-white"}
+              >
                 {errors.Name && <span>Это поле обязательно</span>}
               </p>
             </div>
@@ -80,13 +85,17 @@ const Form = () => {
                 })}
                 onChange={(event) => setPhone(event.target.value)}
               />
-              <p className={"text-left ml-8 mt-2 text-red-600"}>
+              <p
+                style={robotoLight.style}
+                className={"text-left ml-8 mt-2 text-white"}
+              >
                 {errors?.Phone && <span>{errors?.Phone.message}</span>}
               </p>
             </div>
           </div>
           <div className={styles.checkboxgroup}>
             <label
+              style={roboto.style}
               className={
                 "pt-6 font-bold  text-white pl-2 flex text-center mx-32 md:mx-16 smob:mx-4 smob:text-[10px] md:text-[16px]"
               }
@@ -105,7 +114,7 @@ const Form = () => {
             <button
               disabled={!isValid}
               className={
-                "bg-white font-bold text-[16px] text-[#1E2D55] smob:py-4 smob:px-10 md:py-4 md:px-14 rounded-[8px] mt-12  hover:bg-gray-300 cursor-pointer"
+                "bg-white font-bold text-[16px] text-orange smob:py-4 smob:px-10 md:py-4 md:px-14 rounded-[8px] mt-12  hover:bg-gray-300 cursor-pointer"
               }
               type={"submit"}
             >

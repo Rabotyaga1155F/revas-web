@@ -11,9 +11,12 @@ const config: Config = {
       smob: "320px",
       avmob: "375px",
       bmob: "425px",
+      bbmob: "470px",
+      bbbmob: "530px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
+      lg2: "1216px",
       xl: "1280px",
       "2xl": "1536px",
       "3xl": "1750px",
@@ -25,6 +28,10 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        orange: "#F04D23",
+        "orange-white": "#F0613C",
       },
     },
   },
